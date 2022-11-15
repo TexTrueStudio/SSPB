@@ -3,8 +3,9 @@ package rynnavinx.sspb.client.gui;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import net.minecraftforge.fml.loading.FMLPaths;
 
-import net.fabricmc.loader.api.FabricLoader;
+//import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -54,7 +55,7 @@ public class SSPBGameOptions {
     }
 
     public static SSPBGameOptions load() {
-        Path path = FabricLoader.getInstance().getConfigDir().resolve(DEFAULT_FILE_NAME);
+        Path path = FMLPaths.CONFIGDIR.get().resolve(DEFAULT_FILE_NAME);
         SSPBGameOptions config;
 
         if (Files.exists(path)) {
