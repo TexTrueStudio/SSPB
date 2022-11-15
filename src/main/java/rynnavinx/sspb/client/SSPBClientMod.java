@@ -23,7 +23,7 @@ import rynnavinx.sspb.reflection.ReflectionAoFaceData;
 import rynnavinx.sspb.reflection.ReflectionSmoothLightPipeline;
 
 @Mod(SSPBClientMod.MODID)
-@OnlyIn(Dist.CLIENT)
+//@OnlyIn(Dist.CLIENT)
 public class SSPBClientMod {
 	public static final String MODID = "sspb";
 	public static Logger LOGGER = LogManager.getLogger("SSPB");
