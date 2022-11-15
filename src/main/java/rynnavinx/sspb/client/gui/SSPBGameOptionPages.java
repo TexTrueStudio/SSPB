@@ -28,21 +28,21 @@ public class SSPBGameOptionPages {
         List<OptionGroup> groups = new ArrayList<>();
         groups.add(OptionGroup.createBuilder()
                 .add(OptionImpl.createBuilder(int.class, sspbOpts)
-                        .setName(new TranslatableText("sspb.options.shadowyness.name"))
-                        .setTooltip(new TranslatableText("sspb.options.shadowyness.tooltip"))
+                        .setName(new TranslatableText("sspb.options.shadowyness.name").getString())
+                        .setTooltip(new TranslatableText("sspb.options.shadowyness.tooltip").getString())
                         .setControl(option -> new SliderControl(option, 0, 100, 1, ControlValueFormatter.percentage()))
                         .setBinding(SSPBGameOptions::updateShadowyness, opts -> opts.shadowynessPercent)
                         .setFlags(OptionFlag.REQUIRES_RENDERER_RELOAD)
                         .build())
                 .add(OptionImpl.createBuilder(boolean.class, sspbOpts)
-                        .setName(new TranslatableText("sspb.options.onlyaffectpathblocks.name"))
-                        .setTooltip(new TranslatableText("sspb.options.onlyaffectpathblocks.tooltip"))
+                        .setName(new TranslatableText("sspb.options.onlyaffectpathblocks.name").getString())
+                        .setTooltip(new TranslatableText("sspb.options.onlyaffectpathblocks.tooltip").getString())
                         .setControl(TickBoxControl::new)
                         .setBinding((opts, value) -> opts.onlyAffectPathBlocks = value, opts -> opts.onlyAffectPathBlocks)
                         .setFlags(OptionFlag.REQUIRES_RENDERER_RELOAD)
                         .build())
                 .build());
 
-        return new OptionPage(new TranslatableText("sspb.pages.sspb_page.name"), ImmutableList.copyOf(groups));
+        return new OptionPage(new TranslatableText("sspb.pages.sspb_page.name").getString(), ImmutableList.copyOf(groups));
     }
 }
