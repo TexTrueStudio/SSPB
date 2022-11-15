@@ -9,7 +9,7 @@ displayName = "Rubidium Shadowy Path Blocks"
 displayURL="https://github.com/TexTrueStudio/SSPB"
 logoFile="assets/sspb/icon.png"
 credits="Rynnavinx"
-authors="TexTrue, TexTrueStudio, PortingLab"
+authors="TexTrue, TexTrueStudio"
 description = '''
 RSPB reintroduces vanilla-like smooth lighting to non-full blocks (e.g. dirt paths and how they have dark shading when directly next to a full block) when using Rubidium.
 '''
