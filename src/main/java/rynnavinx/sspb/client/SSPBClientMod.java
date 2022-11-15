@@ -13,9 +13,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.network.FMLNetworkConstants;
 import org.apache.commons.lang3.tuple.Pair;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import rynnavinx.sspb.client.gui.SSPBGameOptions;
 import rynnavinx.sspb.reflection.ReflectionAoFaceData;
 import rynnavinx.sspb.reflection.ReflectionSmoothLightPipeline;
@@ -24,7 +26,7 @@ import rynnavinx.sspb.reflection.ReflectionSmoothLightPipeline;
 @OnlyIn(Dist.CLIENT)
 public class SSPBClientMod {
 	public static final String MODID = "sspb";
-	public static final Logger LOGGER = LoggerFactory.getLogger("SSPB");
+	public static Logger LOGGER = LogManager.getLogger("SSPB");
 	private static SSPBGameOptions CONFIG;
 
 
