@@ -41,7 +41,7 @@ dependencies {
 
 	implementation 'org.joml:joml:1.10.2'
 
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	//modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
 processResources {
